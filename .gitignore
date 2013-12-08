@@ -1,0 +1,6 @@
+tmp/*
+app/tmp/*
+app/[Cc]onfig/database.php
+app/[Cc]onfig/core.php
+[Cc]onfig/database.php
+[Cc]onfig/core.php
