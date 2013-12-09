@@ -7,7 +7,7 @@ App::uses('AppController', 'Controller');
  */
 class AdultsController extends AppController {
 	public function beforefilter() {
-        $this->Auth->allow();
+        $this->Auth->allow('index');
 
 	}
 

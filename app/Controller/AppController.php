@@ -41,6 +41,6 @@ class AppController extends Controller {
     );
 
     public function beforeFilter() {
-        $this->Auth->allow();
+    	$this->set('role', $this->Session->read('Auth.User.role'));
     }
 }

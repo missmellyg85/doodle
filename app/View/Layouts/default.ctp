@@ -53,22 +53,47 @@ $cakeDescription = __d('cake_dev', 'Valleydoodles - Specializing in Quality Mini
 	<div id="container" class="container">
 		<div class="row-fluid">
 			<div class="span12">
+				<?php
+					if(isset($role) && !empty($role))
+						echo $this->Html->tag('span',
+							$this->Html->link('Log Out', array('controller'=>'Users', 'action'=>'logout')),
+							array('class'=>'pull-right'));
+					else
+						echo $this->Html->tag('span',
+							$this->Html->link('Log In', array('controller'=>'Users', 'action'=>'login')),
+							array('class'=>'pull-right'));
+				?>
 				<div id="banner">
 				</div>
 			</div>
 		</div>
 
 		<div class="row-fluid">
-			<ul class="span3 nav">
-				<li><?php echo $this->Html->link('Home', array('controller'=>'Pages', 'action'=>'home')); ?></li>
-				<li><?php echo $this->Html->link('Available Puppies', array('controller'=>'Litters', 'action'=>'available')); ?></li>
-				<li><?php echo $this->Html->link('Parents', array('controller'=>'Adults', 'action'=>'index')); ?></li>
-				<li><?php echo $this->Html->link('Prices/Contact', array('controller'=>'Pages', 'action'=>'prices')); ?></li>
-				<li><?php echo $this->Html->link('Past Litters', array('controller'=>'Puppies', 'action'=>'past')); ?></li>
-				<li><?php echo $this->Html->link('About the Breed', array('controller'=>'Pages', 'action'=>'about')); ?></li>
-				<li><?php echo $this->Html->link('Puppy Care', array('controller'=>'Pages', 'action'=>'care')); ?></li>
-			</ul>
+			<?php
+				$list = array(
+					$this->Html->link('Home', array('controller'=>'Pages', 'action'=>'home')),
+					$this->Html->link('Available Puppies', array('controller'=>'Litters', 'action'=>'available')),
+					$this->Html->link('Parents', array('controller'=>'Adults', 'action'=>'index')),
+					$this->Html->link('Prices/Contact', array('controller'=>'Pages', 'action'=>'prices')),
+					$this->Html->link('Past Litters', array('controller'=>'Puppies', 'action'=>'past')),
+					$this->Html->link('About the Breed', array('controller'=>'Pages', 'action'=>'about')),
+					$this->Html->link('Puppy Care', array('controller'=>'Pages', 'action'=>'care'))
+					);
 
+				if(isset($role) && !empty($role)){
+					array_push(
+						$list,
+						$this->Html->link('Manage Litters', array('controller'=>'Litters', 'action'=>'index')),
+						$this->Html->link('Manage Puppies', array('controller'=>'Puppies', 'action'=>'index'))
+						);
+				}
+
+				echo $this->Html->nestedList(
+					$list, 
+					array('class'=>'span3 nav'), 
+					array(), 
+					'ul');
+			?>
 			<div class="span9">
 				<div class="row-fluid">
 					<div class="span12">

@@ -7,8 +7,9 @@ App::uses('AppController', 'Controller');
  */
 class LittersController extends AppController {
 	public function beforefilter() {
+		parent::beforefilter();
 		$this->set('header', 'Available Litters');
-        $this->Auth->allow();
+        $this->Auth->allow('available');
 	}
 
 	public function available() {
