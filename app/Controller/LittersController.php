@@ -12,6 +12,33 @@ class LittersController extends AppController {
         $this->Auth->allow('available');
 	}
 
+	public function index() {
+		$litters = $this->Litter->find('all', array(
+			'contain'=>array('Mom', 'Dad'),
+			'order'=>array('litter_id DESC'),
+			'joins' => array(
+        		array(
+		            'table' => 'adults',
+		            'alias' => 'Mom',
+		            'type' => 'INNER',
+		            'conditions' => array(
+		                'Mom.adult_id = Litter.mom'
+		            )
+				),
+				array(
+		            'table' => 'adults',
+		            'alias' => 'Dad',
+		            'type' => 'INNER',
+		            'conditions' => array(
+		                'Dad.adult_id = Litter.dad'
+		            )
+				)
+        	),	
+        	'fields' => array('Mom.*', 'Dad.*', 'Litter.*')
+		));
+        $this->set('litters', $litters);
+	}
+
 	public function available() {
 
 		$litters = $this->Litter->find('all', array(
