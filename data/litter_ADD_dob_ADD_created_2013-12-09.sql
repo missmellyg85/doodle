@@ -1,0 +1,4 @@
+ALTER TABLE `litters` CHANGE `dob` `dob` TIMESTAMP  NULL;
+
+ALTER TABLE `litters` CHANGE `created` `created` TIMESTAMP  NULL  DEFAULT CURRENT_TIMESTAMP;
+
