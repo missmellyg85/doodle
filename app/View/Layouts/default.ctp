@@ -53,16 +53,6 @@ $cakeDescription = __d('cake_dev', 'Valleydoodles - Specializing in Quality Mini
 	<div id="container" class="container">
 		<div class="row-fluid">
 			<div class="span12">
-				<?php
-					if(isset($role) && !empty($role))
-						echo $this->Html->tag('span',
-							$this->Html->link('Log Out', array('controller'=>'Users', 'action'=>'logout')),
-							array('class'=>'pull-right'));
-					else
-						echo $this->Html->tag('span',
-							$this->Html->link('Log In', array('controller'=>'Users', 'action'=>'login')),
-							array('class'=>'pull-right'));
-				?>
 				<div id="banner">
 				</div>
 			</div>
