@@ -23,7 +23,8 @@
 									if($weight['Weight']['date_text'] == ''){
 										$tr_h.=date('n/j',strtotime($weight['Weight']['dateadded'])); 
 									}else{
-										$tr_h.=$weight['Weight']['date_text']; 
+										$tmp = explode('<br/>', $weight['Weight']['date_text']);
+										$tr_h.=(sizeof($tmp)==2)?$tmp[1]:$tmp[0]; 
 									}
 									$tr_h.="</th>";
 								}
