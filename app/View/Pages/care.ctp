@@ -1,18 +1,18 @@
-<div class="row-fluid"><h3 class="span12">How to Care for Your Puppy</h3></div>
+<div class="row"><h3 class="col-md-12">How to Care for Your Puppy</h3></div>
 
-<div class="row-fluid">
-	<div class="span12 center">
-		<div class="row-fluid">
-			<div class="span12"><img src="<?php echo $this->webroot; ?>img/care.jpg" /></div>
+<div class="row">
+	<div class="col-md-12 center">
+		<div class="row">
+			<div class="col-md-12"><img src="<?php echo $this->webroot; ?>img/care.jpg" /></div>
 		</div>
-		<div class="row-fluid">
-			<p class="span12">5 1/2 weeks old (Chamois X Desmond)</p>
+		<div class="row">
+			<p class="col-md-12">5 1/2 weeks old (Chamois X Desmond)</p>
 		</div>
 	</div>
 </div>
 
-<div class="row-fluid">
-	<div class="span12">
+<div class="row">
+	<div class="col-md-12">
 		<p>There are many excellent sources of information on puppy care and training. It's good to glean a variety of ideas and methods from different resources.  Most of these books and DVDs are found in our library system and may be in yours also. A few sources we recommend are:</p>
 
 		<p>
@@ -26,12 +26,12 @@
     </div>
 </div>
 
-<div class="row-fluid" style="margin-top:20px">
-	<div class="span12 center"><img src="<?php echo $this->webroot; ?>img/care1.jpg" /></div>
+<div class="row" style="margin-top:20px">
+	<div class="col-md-12 center"><img src="<?php echo $this->webroot; ?>img/care1.jpg" /></div>
 </div>
 
-<div class="row-fluid" style="margin-top:20px;">
-	<div class="span12">
+<div class="row" style="margin-top:20px;">
+	<div class="col-md-12">
 		<p><b>Natural Health for Dogs and Cats</b> by Richard H. Pitcairn, D.V.M., PhD, and Susan Hubble Pitcairn</p>
 
 		<p><b>Be the pack leader : use Cesar's way to transform your dog-- and your life</b> by Cesar Millan</p>
@@ -52,13 +52,13 @@
 	</div>
 </div>
 
-<div class="row-fluid" style="margin-top:20px;">
-	<div class="span12 center">
-		<div class="row-fluid">
-			<div class="span12"><img src="<?php echo $this->webroot; ?>img/care2.jpg" /></div>
+<div class="row" style="margin-top:20px;">
+	<div class="col-md-12 center">
+		<div class="row">
+			<div class="col-md-12"><img src="<?php echo $this->webroot; ?>img/care2.jpg" /></div>
 		</div>
-		<div class="row-fluid">
-			<p class="span12">Dr. Rodier checking one of our puppies</p>
+		<div class="row">
+			<p class="col-md-12">Dr. Rodier checking one of our puppies</p>
 		</div>
 	</div>
 </div>

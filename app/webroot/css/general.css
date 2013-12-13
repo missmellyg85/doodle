@@ -4,14 +4,11 @@ p {
 
 #banner {
 	background-color:#0381B7;
-	background-image: url("../img/banner.png");
-	background-position: center;
 	background-repeat: no-repeat;
-	width:940px;
-	height:150px;
 	margin-left, margin-right:10px;
 	margin-top:20px;
 	box-shadow: -5px 7px 5px #666;
+	height:150px;
 
 	-moz-border-radius-topleft: 15px; 
 	-webkit-border-top-left-radius: 15px; 
@@ -46,11 +43,10 @@ h3.title {
 	text-align: center;
 }
 
-ul.nav {
+ul.cust_nav {
 	background-color:#0381B7;
 	list-style-type: none;
-	margin-left:15px;
-	padding-bottom:20px;
+	padding: 5px 5px 20px 5px;
 	height:400px;
 	box-shadow: -5px 5px 5px #666;
 
@@ -64,7 +60,7 @@ ul.nav {
 	border-bottom-right-radius: 15px;
 }
 
-ul.nav li {
+ul.cust_nav li {
 	padding-left:5px; 
 	padding-right:5px;
 	padding-top:3px; 
@@ -72,10 +68,15 @@ ul.nav li {
 	line-height: 30px;
 }
 
-ul.nav li a {
+ul.cust_nav li a {
 	color:#000;
 	font-weight: bold;
 	font-size:1.4em;
+}
+
+ul.cust_nav li:hover {
+	background-color:#fff;
+	font-weight: bold;
 }
 
 #container {

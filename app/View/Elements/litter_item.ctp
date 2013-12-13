@@ -1,7 +1,7 @@
-<div class="row-fluid"><h3 class="span12"><?php echo $litter['Mom']['name']." x ".$litter['Dad']['name']; ?></h3></div>
-	<div class="row-fluid">
+<div class="row"><h3 class="col-md-12"><?php echo $litter['Mom']['name']." x ".$litter['Dad']['name']; ?></h3></div>
+	<div class="row">
 
-		<div class="row-fluid" id="weights_container" <?php echo (sizeof($litter['Puppy'][0]['Weights'])>7)?'style="overflow-x:scroll;"':"" ?>>
+		<div class="row" id="weights_container" <?php echo (sizeof($litter['Puppy'][0]['Weights'])>7)?'style="overflow-x:scroll;"':"" ?>>
 			<div id="weights_scroller">
 				<table class="table_border">
 					<?php
@@ -49,7 +49,7 @@
 			</div>
 		</div>
 		<?php if($m_pics): ?>
-			<div class='row-fluid'><div class='span12'><h4>Males</h4></div></div>
+			<div class='row-fluid'><div class='col-md-12'><h4>Males</h4></div></div>
 			<?php 
 				$count = 0;
 				$size = sizeof($litter['Males']);
@@ -68,7 +68,7 @@
 		<?php endif; ?>
 
 		<?php if($f_pics): ?>
-			<div class='row-fluid'><div class='span12'><h4>Females</h4></div></div>
+			<div class='row-fluid'><div class='col-md-12'><h4>Females</h4></div></div>
 			<?php 
 				$count = 0;
 				$size = sizeof($litter['Females']);

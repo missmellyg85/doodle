@@ -6,16 +6,16 @@
 	foreach($pictures as $pic): 
 		
 		if($first): ?>
-			<div class="row-fluid first">
-				<div class="span9 puppy">
-					<div class="row-fluid">
-						<img src="<?php echo $this->webroot.'img/puppies/'.$puppy['litter_id'].'/'.$pic['PuppiesPictures']['filename'].'.jpg'; ?>" />
+			<div class="row first">
+				<div class="col-md-9 puppy">
+					<div class="row">
+						<img src="<?php echo $this->webroot.'img/puppies/'.$puppy['litter_id'].'/'.$pic['PuppiesPictures']['filename'].'.jpg'; ?>" class="col-md-12"/>
 					</div>
-					<div class="row-fluid age">
-						<p><?php echo $pic['PuppiesPictures']['age']; ?></p>
+					<div class="row age">
+						<p class="col-md-12"><?php echo $pic['PuppiesPictures']['age']; ?></p>
 					</div>
 				</div>
-				<div class="span3 puppy">
+				<div class="col-md-3 puppy">
 					<div class="corner bottom"><a id="<?php echo $puppy['litter_id'].'_'.$puppy['color']; ?>"></a>
 						<h3><?php echo $puppy['color'];?></h3>
 						<h4><?php if($puppy['is_available']) { echo "Available"; } else { echo "Sold"; } ?></h4>
@@ -34,18 +34,18 @@
 		
 		else: 
 			if($count%2 == 0): ?>
-			<div class="row-fluid">
+			<div class="row">
 			<?php endif ?>
-				<div class="span6 puppy">
-					<div class="row-fluid">
-						<img src="<?php echo $this->webroot.'img/puppies/'.$puppy['litter_id'].'/'.$pic['PuppiesPictures']['filename'].'.jpg'; ?>" />
+				<div class="col-md-6 puppy">
+					<div class="row">
+						<img src="<?php echo $this->webroot.'img/puppies/'.$puppy['litter_id'].'/'.$pic['PuppiesPictures']['filename'].'.jpg'; ?>" class="col-md-12" />
 					</div>
-					<div class="row-fluid age">
-						<p><?php echo $pic['PuppiesPictures']['age']; ?></p>
+					<div class="row age">
+						<p class="col-md-12"><?php echo $pic['PuppiesPictures']['age']; ?></p>
 					</div>
 				</div>
 		<?php if(($count%2 == 0) && ($count == $size)): ?>
-				<div class="span6 puppy"></div>
+				<div class="col-md-6 puppy"></div>
 			</div>
 		<?php 
 			endif; 

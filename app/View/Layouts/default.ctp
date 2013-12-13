@@ -51,8 +51,8 @@ $cakeDescription = __d('cake_dev', 'Valleydoodles - Specializing in Quality Mini
 <body>
 	<a name="top"></a>
 	<div id="container" class="container">
-		<div class="row-fluid">
-			<div class="span12">
+		<div class="row">
+			<div class="col-md-12">
 				<?php
 					if(isset($role) && !empty($role))
 						echo $this->Html->tag('span',
@@ -64,11 +64,15 @@ $cakeDescription = __d('cake_dev', 'Valleydoodles - Specializing in Quality Mini
 							array('class'=>'pull-right'));
 				?>
 				<div id="banner">
+					<?php
+						echo $this->Html->image('banner.png');
+					?>
 				</div>
 			</div>
 		</div>
 
-		<div class="row-fluid">
+		<div class="row">
+			<div class='col-md-3'>
 			<?php
 				$list = array(
 					$this->Html->link('Home', array('controller'=>'Pages', 'action'=>'home')),
@@ -90,25 +94,25 @@ $cakeDescription = __d('cake_dev', 'Valleydoodles - Specializing in Quality Mini
 
 				echo $this->Html->nestedList(
 					$list, 
-					array('class'=>'span3 nav'), 
+					array('class'=>'cust_nav'), 
 					array(), 
 					'ul');
 			?>
-			<div class="span9">
-				<div class="row-fluid">
-					<div class="span12">
-
-						<div class="row-fluid">
-							<?php echo $content_for_layout; ?>	
-						</div>
+			</div>
+			<div class="col-md-9">
+				<div class="row">
+					<div class="col-md-12">
+							<?php echo $content_for_layout; ?>
 					</div>
 			</div>
 		</div>
-	</div>
 
-	<div id="footer" class="row-fluid">
-		<p>This website has been created and is maintained by <a href="mailto:&#109;&#105;&#115;&#115;&#121;&#119;&#105;&#108;&#108;&#105;&#097;&#109;&#115;&#056;&#053;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Melissa Leann Design</a></p>
-		<p>©<?php echo date('Y', time()); ?> No portion of this page may be copied or distributed without permission from the webmaster.</p>
+		<div class="row">
+			<div id="footer" class="col-md-12">
+				<p>This website has been created and is maintained by <a href="mailto:&#109;&#105;&#115;&#115;&#121;&#119;&#105;&#108;&#108;&#105;&#097;&#109;&#115;&#056;&#053;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Melissa Leann Design</a></p>
+				<p>©<?php echo date('Y', time()); ?> No portion of this page may be copied or distributed without permission from the webmaster.</p>
+			</div>
+		</div>
 	</div>
 	<?php //echo $this->element('sql_dump'); ?>
 </body>

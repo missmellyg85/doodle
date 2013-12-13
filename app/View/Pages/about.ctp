@@ -1,7 +1,7 @@
-<div class="row-fluid"><h3 class="span12">Miniature Goldendoodles: About the Breed</h3></div>
+<div class="row"><h3 class="col-md-12">Miniature Goldendoodles: About the Breed</h3></div>
 
-<div class="row-fluid">
-	<div class="span12">
+<div class="row">
+	<div class="col-md-12">
 		<img style="float:right;" src="<?php echo $this->webroot; ?>img/about.jpg" />
 		<p>Goldendoodles are a wonderful hybrid that is strong, intelligent, highly trainable and affectionate with an even temperament. They are a first generation cross between a Golden Retriever and a Poodle. A standard Goldendoodle is a Golden Retriever bred with a standard sized Poodle. A miniature Goldendoodle is one bred with a miniature or toy poodle. Their size will depend on the sizes of the parents, with a range of 15 to 40 lbs. Our sire, Desmond (12 lbs), produces offspring with an adult weight of approximately 30-35 lbs. The first cross between two unrelated purebred lines creates a hybrid vigor that is stronger and less prone to disease than either parent line because of the wider gene pool. Our Golden line is free from hip dysplasia as is our Poodles'. With a miniature sire and the Poodles' breed, the Golden hybrid cross will strengthen the puppies' genetic possibilities of fewer problems.</p>
 
@@ -11,6 +11,6 @@
 	</div>
 </div>
 
-<div class="row-fluid">
-	<div class="span12 center"><img src="<?php echo $this->webroot; ?>img/about1.jpg" /></div>
+<div class="row">
+	<div class="col-md-12 center"><img src="<?php echo $this->webroot; ?>img/about1.jpg" /></div>
 </div>

@@ -1,35 +1,35 @@
-<div class="row-fluid">
-	<h3 class="span12">Welcome to Valleydoodles!</h3>
+<div class="row">
+	<h3 class="col-md-12">Prices and Contact</h3>
 </div>
 
-<div class="row-fluid">
-	<div class="span12 center">
-		<div class="row-fluid">
-			<div class="span12"><img src="<?php echo $this->webroot; ?>img/prices.jpg" /></div>
+<div class="row">
+	<div class="col-md-12 center">
+		<div class="row">
+			<div class="col-md-12"><img src="<?php echo $this->webroot; ?>img/prices.jpg" /></div>
 		</div>
-		<div class="row-fluid">
-			<p class="span12">Chamois X Desmond puppies at 5 weeks old!</p>
+		<div class="row">
+			<p class="col-md-12">Chamois X Desmond puppies at 5 weeks old!</p>
 		</div>
 	</div>
 </div>
 
-<div class="row-fluid">
-	<p class="span12">Miniature Goldendoodle puppy: $1200<br/>
+<div class="row">
+	<p class="col-md-12">Miniature Goldendoodle puppy: $1200<br/>
 	From an American Golden Retriever (Chamois or Jade)</p>
 </div>
 
-<div class="row-fluid">
-	<p class="span12">Miniature English Goldendoodle puppy: $1400<br/>
+<div class="row">
+	<p class="col-md-12">Miniature English Goldendoodle puppy: $1400<br/>
 	From an English Golden Retriever (Bridgette)</p>
 </div>
 
-<div class="row-fluid">
-	<p class="span12">Miniature F1b Goldendoodle puppy:  $1200<br/>
+<div class="row">
+	<p class="col-md-12">Miniature F1b Goldendoodle puppy:  $1200<br/>
 	From a Miniature Goldendoodle (Zoe)
 </div>
 
-<div class="row-fluid">
-	<div class="span12">
+<div class="row">
+	<div class="col-md-12">
 		<p>As the $250 deposit is received you will be in line to choose your puppy. First in line chooses, then second chooses from remaining puppies and so on. When the puppies are born you will need to determine if you are in line for a boy or girl if you haven't decided yet. Some families know right away which one they want based on color, size or just because! Some families like to wait a few weeks to see a little more as the puppies develop.</p>
 
 		<p>Eyes are opening between 7-15 days old. I usually get in two photo shoots before that process begins, then I'll wait until they are closer to 3 weeks old to do more pictures. Families with deposits will get lots of pictures through email in addition to the ones on this site. Anyone is welcome to ask for extra pictures to be sent via email.</p>
@@ -53,12 +53,12 @@
 	</div>
 </div>
 
-<div class="row-fluid">
-	<div class="span12 center"><img src="<?php echo $this->webroot; ?>img/prices1.jpg" /></div>
+<div class="row">
+	<div class="col-md-12 center"><img src="<?php echo $this->webroot; ?>img/prices1.jpg" /></div>
 </div>
 
-<div class="row-fluid" style="margin-top:20px;">
-	<div class="span12">
+<div class="row" style="margin-top:20px;">
+	<div class="col-md-12">
 		<p><b>Email:</b> <a href="mailto:&#118;&#097;&#108;&#108;&#101;&#121;&#100;&#111;&#111;&#100;&#108;&#101;&#115;&#064;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#046;&#099;&#111;&#109;">&#118;&#097;&#108;&#108;&#101;&#121;&#100;&#111;&#111;&#100;&#108;&#101;&#115;&#064;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#046;&#099;&#111;&#109;</a></p>
 		<p><b>Phone:</b> Kim  at 417-771-8078</p>
 	</div>
