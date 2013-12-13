@@ -31,6 +31,9 @@ $cakeDescription = __d('cake_dev', 'Valleydoodles - Specializing in Quality Mini
 
 		echo $this->Html->css('general.css');
 		echo $this->Html->css('bootstrap');
+
+		echo $this->Html->script('jquery-1.10.2.min.js');
+		echo $this->Html->script('alert.js');
 	?>
 </head>
 
