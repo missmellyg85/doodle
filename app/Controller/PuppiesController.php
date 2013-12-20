@@ -40,4 +40,9 @@ class PuppiesController extends AppController {
 	public function past() {
 
 	}
+
+	public function add() {
+		$this->loadModel('Litter');
+		$this->set('litters', $this->Litter->listLitters());
+	}
 }

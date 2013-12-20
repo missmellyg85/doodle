@@ -40,7 +40,6 @@ class LittersController extends AppController {
 	}
 
 	public function add() {
-		debug($this->data);
         if ($this->request->is('post')) {
             $this->Litter->create();
             if ($this->Litter->save($this->request->data)) {

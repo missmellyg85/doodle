@@ -50,4 +50,36 @@ class Litter extends AppModel {
 	        ),
         )
 	);
+
+	public function listLitters() {
+		$litters = $this->find('all', array(
+			'contain'=>array('Mom', 'Dad'),
+			'order'=>array('litter_id DESC'),
+			'joins' => array(
+        		array(
+		            'table' => 'adults',
+		            'alias' => 'Mom',
+		            'type' => 'INNER',
+		            'conditions' => array(
+		                'Mom.adult_id = Litter.mom'
+		            )
+				),
+				array(
+		            'table' => 'adults',
+		            'alias' => 'Dad',
+		            'type' => 'INNER',
+		            'conditions' => array(
+		                'Dad.adult_id = Litter.dad'
+		            )
+				)
+        	),	
+        	'fields' => array('Mom.*', 'Dad.*', 'Litter.*')
+		));
+
+    	$list = array();
+    	foreach ($litters as $l) {
+    		$list[$l['Litter']['litter_id']] = $l['Mom']['name'].' x '.$l['Dad']['name'].' ('.date('n/j/Y g:i a', strtotime($l['Litter']['dob'])).')';
+    	}
+    	return $list;
+	}
 }
