@@ -42,4 +42,26 @@ class Adult extends AppModel {
 			'className' => 'adults_pictures',
         )
     );
+
+    public function listMoms() {
+    	return $this->find(
+    		'list', 
+    		array(
+    			'conditions'=>array(
+    				'!is_male'
+    			)
+    		)
+    	);
+    }
+
+    public function listDads() {
+    	return $this->find(
+    		'list', 
+    		array(
+    			'conditions'=>array(
+    				'is_male'
+    			)
+    		)
+    	);
+    }
 }

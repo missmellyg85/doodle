@@ -32,4 +32,22 @@ class Litter extends AppModel {
 		)
 	);
 
+	public $validate = array(
+		'mom' => array(
+            'notEmpty' => array(
+	            'rule' => 'notEmpty',
+	            'message' => 'Veuillez choisir un projet',
+	            'required' => true,
+	            'allowEmpty' => false
+	        ),
+        ),
+        'dad' => array(
+            'notEmpty' => array(
+	            'rule' => 'notEmpty',
+	            'message' => 'Veuillez choisir un projet',
+	            'required' => true,
+	            'allowEmpty' => false
+	        ),
+        )
+	);
 }

@@ -1,5 +1,8 @@
 <div class="col-md-12" id="user-admin">
 	<h2>Users</h2>
+
+	<?php echo (isset($flash_message))?'<div>'.$flash_message.'</div>':''; ?>
+
 	<?php
 		echo $this->Html->tag(
 			'span',
@@ -8,22 +11,19 @@
 			);
 	?>
 	<table class="table table-bordered table-striped">
-		<tr>
-			<th>User</th>
-			<th>Role</th>
-			<th>Modified</th>
-			<th>Created</th>
-		</tr>
-	<?php
+	<?php echo $this->Html->tableHeaders(array('User', 'Role', 'Modified', 'Created', 'Actions'));
+		
 		foreach ($users as $u) {
 			$u = $u['User'];
-			echo "<tr>";
-			echo "<td>".$u['username']."</td>";
-			echo "<td>".$u['role']."</td>";
-			echo "<td>".$u['modified']."</td>";
-			echo "<td>".$u['created']."</td>";
-			echo "</tr>";
+			$cells[] = array(
+				$u['username'],
+				$u['role'],
+				date('Y-m-d H:i:s', strtotime($u['modified'])),
+				date('Y-m-d H:i:s', strtotime($u['created'])),
+				$this->Html->link('Delete', array('controller'=>'Users', 'action'=>'delete', $u['id']), array(), "Are you sure you would like to delete this user? This will delete them permanently.")
+			);
 		}
+		echo $this->Html->tableCells($cells);
 	?>
 	</table>
 </div>

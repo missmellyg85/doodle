@@ -39,6 +39,31 @@ class LittersController extends AppController {
         $this->set('litters', $litters);
 	}
 
+	public function add() {
+		debug($this->data);
+        if ($this->request->is('post')) {
+            $this->Litter->create();
+            if ($this->Litter->save($this->request->data)) {
+                return $this->redirect(array('action' => 'index', 'add_success'=>true));
+            }
+            $this->set('flash_message', 'The litter could not be saved. Please try again.');
+        }
+      	$this->loadModel('Adult');
+    	$this->set('moms', $this->Adult->listMoms());
+    	$this->set('dads', $this->Adult->listDads());
+    }
+
+    public function delete($id = null) {
+        $this->Litter->id = $id;
+        if (!$this->Litter->exists()) {
+            throw new NotFoundException(__('Invalid user'));
+        }
+        if ($this->Litter->delete()) {
+            return $this->redirect(array('action' => 'index', 'delete_success'=>true));
+        }
+        return $this->redirect(array('action' => 'index', 'delete_fail'=>true));
+    }
+
 	public function available() {
 
 		$litters = $this->Litter->find('all', array(

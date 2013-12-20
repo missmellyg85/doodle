@@ -9,6 +9,14 @@ class UsersController extends AppController {
     public function index() {
         $this->User->recursive = 0;
         $this->set('users', $this->paginate());
+        if(isset($this->params->named['add_success'])){
+            $this->set('flash_message', 'The user has been added successfully!');
+        } elseif (isset($this->params->named['delete_success'])){
+            $this->set('flash_message', 'The user has been deleted successfully.');
+        } elseif (isset($this->params->named['delete_fail'])){
+            $this->set('flash_message', 'The user could not be deleted. Please try again.');
+        }
+    
     }
 
     public function view($id = null) {
@@ -23,11 +31,12 @@ class UsersController extends AppController {
         if ($this->request->is('post')) {
             $this->User->create();
             if ($this->User->save($this->request->data)) {
-                $this->Session->setFlash(__('The user has been saved'));
-                return $this->redirect(array('action' => 'index'));
+                return $this->redirect(array('action' => 'index', 'add_success'=>true));
             }
-            $this->Session->setFlash(__('The user could not be saved. Please, try again.'));
+            $this->set('flash_message', 'The user could not be saved. Please try again.');
         }
+
+
     }
 
     public function edit($id = null) {
@@ -48,18 +57,14 @@ class UsersController extends AppController {
     }
 
     public function delete($id = null) {
-        $this->request->onlyAllow('post');
-
         $this->User->id = $id;
         if (!$this->User->exists()) {
             throw new NotFoundException(__('Invalid user'));
         }
         if ($this->User->delete()) {
-            $this->Session->setFlash(__('User deleted'));
-            return $this->redirect(array('action' => 'index'));
+            return $this->redirect(array('action' => 'index', 'delete_success'=>true));
         }
-        $this->Session->setFlash(__('User was not deleted'));
-        return $this->redirect(array('action' => 'index'));
+        return $this->redirect(array('action' => 'index', 'delete_fail'=>true));
     }
     
     public function login() {
