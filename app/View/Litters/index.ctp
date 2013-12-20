@@ -1,4 +1,4 @@
-<div class="span12">
+<div class="col-md-12">
 	<h2>Litters</h2>
 	<?php
 		// echo $this->Html->tag(
