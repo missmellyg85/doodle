@@ -45,4 +45,13 @@ class PuppiesController extends AppController {
 		$this->loadModel('Litter');
 		$this->set('litters', $this->Litter->listLitters());
 	}
+
+	public function addMany() {
+		if ($this->request->is('post')) {
+			debug($this->params->data);
+		}
+
+		$this->loadModel('Litter');
+		$this->set('litters', $this->Litter->listLitters());
+	}
 }
