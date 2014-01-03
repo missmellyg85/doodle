@@ -24,7 +24,8 @@
 					($litter['Litter']['is_active'])?'Active':'Inactive',
 					array('class'=>($litter['Litter']['is_active'])?'text-success':'text-danger')
 				),
-				$this->Html->link('Delete', array('controller'=>'Litters', 'action'=>'delete', $litter['Litter']['litter_id']), array(), "Are you sure you want to delete this litter? You cannot undo this action.")
+				$this->Html->link('Delete', array('controller'=>'Litters', 'action'=>'delete', $litter['Litter']['litter_id']), array(), "Are you sure you want to delete this litter? You cannot undo this action.").' | '.
+				$this->Html->link('View', array('controller'=>'Litters', 'action'=>'view', $litter['Litter']['litter_id']))
 			);
 		}
 		echo $this->Html->tableCells($cells);

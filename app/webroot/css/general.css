@@ -221,3 +221,11 @@ div.main-pic {
 .text-info:hover {
   color: #245269;
 }
+
+.litter_active {
+	color:#ff0000;
+}
+
+.litter_inactive {
+	color:#ccc;
+}
