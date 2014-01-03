@@ -47,18 +47,28 @@
 	);
 
 	echo $this->Html->div(
-	'form-group',
-	$this->Html->div(
-		'col-md-offset-2 col-md-2',
-		$this->Form->submit(
-    		'Add Litter',
-    		array('class'=>'btn btn-primary')
-    	),
-    	array()
-	),
-	
-	array()
-);
+		'form-group',
+		$this->Html->tag('label', 'Birthdate', array('for'=>'dob', 'class'=>'col-md-2')).
+		$this->Html->div(
+			'col-md-3',
+			'<input id="dp1" name="dob" id="dob" class="form-control" type="text" value="'.date('m/d/y').'" data-date-format="mm/dd/yy">',
+			array()
+		),
+		array()
+	);
+
+	echo $this->Html->div(
+		'form-group',
+		$this->Html->div(
+			'col-md-offset-2 col-md-2',
+			$this->Form->submit(
+	    		'Add Litter',
+	    		array('class'=>'btn btn-primary')
+	    	),
+	    	array()
+		),
+		array()
+	);
 
 	echo $this->Form->end();
 ?>
@@ -74,3 +84,12 @@
 		<li><?php echo $this->Html->link(__('New Puppy'), array('controller' => 'puppies', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
+
+
+<script>
+	$(document).ready(function() {
+		var d = new Date();
+		var today = ""+(d.getMonth()+1)+"/"+(d.getDate())+"/"+(d.getFullYear().toString().slice(2,4))+"";
+	    $('#dp1').datepicker('setValue', today).on('changeDate', function(ev){ $('.datepicker').hide();});
+	});
+</script>

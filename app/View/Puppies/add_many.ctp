@@ -31,8 +31,13 @@
 
 	$cells = array(
 		'<div class="form-group"><input type="text" required="required" name="data[Puppy][0][color]" class="color form-control" /></div>',
-		'<div class="form-group text-center"><input type="checkbox" name="data[Puppy][0][is_male]" class="is_male form-control" value="true"/></div>',
-		'<div class="form-group text-center"><input type="checkbox" name="data[Puppy][0][is_available]" class="is_available form-control" value="true" /></div>',
+		'<div class="form-group text-center">
+			<input type="hidden" name="data[Puppy][0][is_male]" class="is_male form-control" value="0"/>
+			<input type="checkbox" name="data[Puppy][0][is_male]" class="is_male form-control" value="1"/>
+			</div>',
+		'<div class="form-group text-center">
+			<input type="hidden" name="data[Puppy][0][is_available]" class="is_available form-control" value="0" />
+			<input type="checkbox" name="data[Puppy][0][is_available]" class="is_available form-control" value="1" /></div>',
 		'<div class="form-group"><input type="text" name="data[Puppy][0][forever_home]" class="forever_home form-control" /></div>',
 		'<div class="form-group">'.$this->Html->tag('span', '', array('class'=>'glyphicon glyphicon-remove')).'</div>'
 	);

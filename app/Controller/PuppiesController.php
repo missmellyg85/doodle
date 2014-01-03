@@ -48,7 +48,14 @@ class PuppiesController extends AppController {
 
 	public function addMany() {
 		if ($this->request->is('post')) {
-			debug($this->params->data);
+			$puppies = $this->params->data['Puppy'];
+			$lid = $this->params->data['litters'];
+
+			$puppies = Hash::insert($puppies, '{n}.litter_id', $lid);
+			
+			if ($this->Puppy->saveMany($puppies, array('validate'=>'true'))) {
+                return $this->redirect(array('controller'=>'litters', 'action' => 'view', 'add_success'=>true, $lid));
+            }
 		}
 
 		$this->loadModel('Litter');

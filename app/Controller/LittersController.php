@@ -39,8 +39,44 @@ class LittersController extends AppController {
         $this->set('litters', $litters);
 	}
 
+	public function view($id = null) {
+		$this->Litter->id = $id;
+		if (!$this->Litter->exists()) {
+			throw new NotFoundException(__('Invalid litter'));
+		}
+		$litter = $this->Litter->find('all', array(
+			'conditions'=>array('litter_id'=>$id),
+			'contain'=>array('Mom', 'Dad'),
+			'order'=>array('litter_id DESC'),
+			'joins' => array(
+        		array(
+		            'table' => 'adults',
+		            'alias' => 'Mom',
+		            'type' => 'INNER',
+		            'conditions' => array(
+		                'Mom.adult_id = Litter.mom'
+		            )
+				),
+				array(
+		            'table' => 'adults',
+		            'alias' => 'Dad',
+		            'type' => 'INNER',
+		            'conditions' => array(
+		                'Dad.adult_id = Litter.dad'
+		            )
+				)
+        	),	
+        	'fields' => array('Mom.*', 'Dad.*', 'Litter.*')
+		));
+		$this->set('litter', $litter[0]);
+	}
+
 	public function add() {
         if ($this->request->is('post')) {
+        	if($this->request->data['dob']){
+        		$this->request->data['dob'] = date('Y-m-d H:i:s',strtotime($this->request->data['dob']));
+        	}
+
             $this->Litter->create();
             if ($this->Litter->save($this->request->data)) {
                 return $this->redirect(array('action' => 'index', 'add_success'=>true));
