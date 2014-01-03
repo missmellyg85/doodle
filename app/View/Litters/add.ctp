@@ -72,20 +72,6 @@
 
 	echo $this->Form->end();
 ?>
-
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-
-		<li><?php echo $this->Html->link(__('List Litters'), array('action' => 'index'));?></li>
-		<li><?php echo $this->Html->link(__('List Adults'), array('controller' => 'adults', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Litter Mom'), array('controller' => 'adults', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Puppies'), array('controller' => 'puppies', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Puppy'), array('controller' => 'puppies', 'action' => 'add')); ?> </li>
-	</ul>
-</div>
-
-
 <script>
 	$(document).ready(function() {
 		var d = new Date();
