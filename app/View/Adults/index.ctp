@@ -1,27 +1,5 @@
 <div class="row"><h3 class="col-md-12"><?php echo "Meet the Parents"; ?></h3></div>
 
-
-<div class="row">
-	<div class="col-md-12"><h3>Jade</h3></div>
-</div>
-
-<div class="row">
-	<div class="col-md-6 center"><img src="<?php echo $this->webroot; ?>img/adults/jade1.jpg" /></div>
-	<div class="col-md-6 center"><img src="<?php echo $this->webroot; ?>img/adults/jade2.jpg" /></div>
-</div>
-
-<div class="row">
-	<div class="col-md-6 center"><img src="<?php echo $this->webroot; ?>img/adults/jade3.jpg" /></div>
-	<div class="col-md-6 center"><img src="<?php echo $this->webroot; ?>img/adults/jade4.jpg" /></div>
-</div>
-
-<div class="row">
-	<div class="col-md-12">
-		<p>Jade is a purebred, AKC registered, 65lb. Golden Retriever.</p>
-		<p>Jade has the square Teddy Bear head like the show dog line of her sire. She has the Retriever's love for water and likes to go for swims in the neighbor's pond. Jade and Chamois are litter mates (sisters), so their puppies will all be similar. They both have the wonderful Golden Retriever personality that is friendly, reliable and trustworthy. We never doubt their gentleness with our children or our friends' children. One of my favorite times with Jade is going for walks.</p>
-	</div>
-</div>
-
 <div class="row">
 	<div class="col-md-12"><h3>Chamois</h3></div>
 </div>
@@ -137,27 +115,7 @@
 </div>
 
 <div class="row">
-	<div class="col-md-12 center"><h2>Our Sires</h2></div>
-</div>
-
-<div class="row">
-	<div class="col-md-12"><h3>Reuben</h3></div>
-</div>
-
-<div class="row">
-	<div class="col-md-6 center"><img src="<?php echo $this->webroot; ?>img/adults/reuben1.jpg" /></div>
-	<div class="col-md-6 center"><img src="<?php echo $this->webroot; ?>img/adults/reuben2.jpg" /></div>
-</div>
-
-<div class="row">
-	<div class="col-md-12 center"><img src="<?php echo $this->webroot; ?>img/adults/reuben3.jpg" /></div>
-</div>
-
-<div class="row">
-	<div class="col-md-12">
-		<p>Reuben is a 12 lb. pure bred Poodle with a very sweet, calm temperament. His sire's pedigree is mostly chocolate/red with a little black and his dam's pedigree is half chocolate, half silver. He is a happy, fun little guy who loves to play with the kids, go for walks and be in close proximity to his people. Half his puppies will have darker colors including a possible black puppy with half of the litter still being the golden colors of the mother.</p>
-		<p>Chocolate is a rare color for Poodles as this gene needs to be from both parents. A chocolate puppy will have a brown nose and lighter eyes. A brown puppy will have a black nose with brown eyes.</p>
-	</div>
+	<div class="col-md-12 center"><h2>Our Sire</h2></div>
 </div>
 
 <div class="row">
