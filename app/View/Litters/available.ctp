@@ -1,9 +1,5 @@
 <h2>Available Puppies</h2>
 <div class="row-fluid">
-	
-	<p><b>Available Adults:</b></p>
-
-	<p>See Bridgette's and Reuben's pictures on our 'Parents' page.</p>
 
 	<p><b>Upcoming litters:</b></p>
 	<p>Zoe will be bred with Budro for spring babies ready to go home in May.  These puppies will be F1b miniature Goldendoodles (1/4 Golden Retriever, 3/4 Poodle).  Their adult weight will average 20-25 lbs.  They are very much like the 50/50 Goldendoodles except they will be a little smaller, have more curl/wave (not tight curls like the Poodle) and be completely non-shedding.</p>
