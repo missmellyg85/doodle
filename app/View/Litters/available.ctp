@@ -1,10 +1,8 @@
 <h2>Available Puppies</h2>
 <div class="row-fluid">
 
-	<p><b>Upcoming litters:</b></p>
-	<p>Zoe will be bred with Budro for spring babies ready to go home in May.  These puppies will be F1b miniature Goldendoodles (1/4 Golden Retriever, 3/4 Poodle).  Their adult weight will average 20-25 lbs.  They are very much like the 50/50 Goldendoodles except they will be a little smaller, have more curl/wave (not tight curls like the Poodle) and be completely non-shedding.</p>
-	<p>We will know without a doubt there is a pregnancy a week before puppies are due when the mother's milk begins to fill in. We won't know how many or what gender until their birthday.</p>
-	<p>A deposit can be sent anytime to reserve your spot in line to choose your puppy. If there is not a pregnancy or not enough puppies available, your deposit can be returned.</p>
+	<p><b>New litter!</b></p>
+	<p>Zoe and Budro now have 6 babies born Saturday, March 22!  There are 2 boys and 4 girls.  All puppies have forever homes but you are welcome to get on the list for the next litter.</p>
 	<p>You may call or email any time with questions:</p>
 	<p><a href="mailto:&#118;&#097;&#108;&#108;&#101;&#121;&#100;&#111;&#111;&#100;&#108;&#101;&#115;&#064;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#046;&#099;&#111;&#109;">&#118;&#097;&#108;&#108;&#101;&#121;&#100;&#111;&#111;&#100;&#108;&#101;&#115;&#064;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#046;&#099;&#111;&#109;</a></br>
 		Phone:  417-771-8078<br />
