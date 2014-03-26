@@ -7,8 +7,9 @@
 	<p><a href="mailto:&#118;&#097;&#108;&#108;&#101;&#121;&#100;&#111;&#111;&#100;&#108;&#101;&#115;&#064;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#046;&#099;&#111;&#109;">&#118;&#097;&#108;&#108;&#101;&#121;&#100;&#111;&#111;&#100;&#108;&#101;&#115;&#064;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#046;&#099;&#111;&#109;</a></br>
 		Phone:  417-771-8078<br />
 		You are welcome to call to ask questions.  Email is the best form of communication when we have puppies.  It allows me to respond to everyone once a day so I can spend more time giving attention to puppies and mom.</p>
+	<h4>The images below are from Zoe and Budro's previous litter.</h4>
 
-	<img class="span12" src="<?php echo $this->webroot; ?>img/puppies/2/group3.jpg" />
+	<img src="<?php echo $this->webroot; ?>img/puppies/2/group3.jpg" />
 	<p class="age">Zoe X Budro puppies at 3 weeks old</p>
 	<p>All puppies from this litter have forever homes.  These pictures will remain up for you to see how a litter is posted until new puppies arrive. </p>
 
